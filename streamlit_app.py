@@ -5,7 +5,8 @@ import google.generativeai as genai
 genai.configure(api_key=st.secrets["GEMINI_API_KEY"])
 
 # Load model
-model = genai.GenerativeModel("gemini-pro")
+model = genai.GenerativeModel(model_name="models/gemini-pro")
+
 
 # App UI
 st.set_page_config(page_title="Mont & Paix Chatbot", page_icon="🏨")
